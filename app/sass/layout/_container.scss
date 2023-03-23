@@ -1,0 +1,44 @@
+.container {
+  background: white;
+  width: 98%;
+  margin: 1rem auto;
+}
+
+.container {
+  .btn {
+    background: blue;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: white;
+    border-radius: 3px;
+  }
+  .btn:hover {
+    background: white;
+    color: black;
+    border: 2px solid blue;
+  }
+}
+
+.container {
+  .flex {
+    display: flex;
+  }
+  .center {
+    align-items: center;
+  }
+  .fs {
+    align-items: flex-start;
+  }
+  .fe {
+    align-items: flex-end;
+  }
+  .end {
+    justify-content: flex-end;
+  }
+  .sb {
+    justify-content: space-between;
+  }
+  .sa {
+    justify-content: space-around;
+  }
+}
