@@ -1,0 +1,40 @@
+main {
+  .hero {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .buttons {
+      margin-bottom: 1.5rem;
+      .how-it-works {
+        background: none;
+        cursor: pointer;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        margin-left: 1rem;
+        padding: 0.8rem 1.5rem;
+
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+      .how-it-works:hover {
+        background: rgb(244, 244, 244);
+      }
+    }
+    .reviews {
+      p {
+        margin-bottom: 0;
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+      }
+      a {
+        text-decoration: underline;
+        color: black;
+        font-weight: 600;
+      }
+    }
+  }
+}
