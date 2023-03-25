@@ -133,6 +133,19 @@ header nav .get-started {
   margin: 0 auto;
 }
 
+.wrapper .checkmark {
+  margin-bottom: 1rem;
+}
+.wrapper .checkmark .checkmark__image {
+  margin-right: 0.5rem;
+}
+.wrapper .checkmark:last-child {
+  margin-bottom: 0;
+}
+.wrapper .section__body--content {
+  margin-bottom: 1.5rem;
+}
+
 main .hero h1 {
   font-size: 3rem;
 }
@@ -192,9 +205,17 @@ main .cta__body h1 {
 main .cta__body .cta__body--content {
   margin-bottom: 1.5rem;
 }
-main .cta__body div:not(div:last-child) {
-  margin-bottom: 1rem;
+
+.plans .plan {
+  background: rgb(36, 45, 254);
+  margin-top: 2rem;
+  color: white;
+  padding: 3rem;
+  border-radius: 5px;
 }
-main .cta__body div img {
-  margin-right: 0.5rem;
+.plans .plan h1 {
+  font-size: 2rem;
+}
+.plans .plan:not(.plan:last-child) {
+  margin-right: 1rem;
 }/*# sourceMappingURL=style.css.map */

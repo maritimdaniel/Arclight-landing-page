@@ -2,3 +2,19 @@
   width: 80%;
   margin: 0 auto;
 }
+
+.wrapper {
+  .checkmark {
+    margin-bottom: 1rem;
+    .checkmark__image {
+      margin-right: 0.5rem;
+    }
+  }
+  .checkmark:last-child {
+    margin-bottom: 0;
+  }
+
+  .section__body--content {
+    margin-bottom: 1.5rem;
+  }
+}
