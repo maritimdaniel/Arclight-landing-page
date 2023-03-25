@@ -147,9 +147,6 @@ header nav .get-started {
 .wrapper .checkmark .checkmark__image {
   margin-right: 0.5rem;
 }
-.wrapper .checkmark:first-child {
-  margin-top: 1.5rem;
-}
 .wrapper .checkmark:last-child {
   margin-bottom: 0;
 }
@@ -193,8 +190,6 @@ main .hero .reviews a {
 
 main .cta {
   position: relative;
-  background: rgb(36, 45, 254);
-  color: #fff;
   margin-top: 2rem;
   padding-top: 3rem;
 }
@@ -205,6 +200,8 @@ main .cta__image {
 }
 main .cta__image img {
   width: 100%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 main .cta__body {
   flex: 1;
