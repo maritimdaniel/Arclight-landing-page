@@ -16,7 +16,7 @@ body {
   height: 100%;
   background-color: rgb(36, 45, 254);
   color: rgb(65, 65, 65);
-  font-family: "Inter", sans-serif;
+  font-family: "Bitter", serif;
 }
 
 html,
@@ -39,6 +39,14 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.4;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+button {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 a,
@@ -139,6 +147,9 @@ header nav .get-started {
 .wrapper .checkmark .checkmark__image {
   margin-right: 0.5rem;
 }
+.wrapper .checkmark:first-child {
+  margin-top: 1.5rem;
+}
 .wrapper .checkmark:last-child {
   margin-bottom: 0;
 }
@@ -206,9 +217,12 @@ main .cta__body .cta__body--content {
   margin-bottom: 1.5rem;
 }
 
+.plans {
+  gap: 2rem;
+}
 .plans .plan {
   background: rgb(36, 45, 254);
-  margin-top: 2rem;
+  margin-top: 4rem;
   color: white;
   padding: 3rem;
   border-radius: 5px;
@@ -216,6 +230,50 @@ main .cta__body .cta__body--content {
 .plans .plan h1 {
   font-size: 2rem;
 }
-.plans .plan:not(.plan:last-child) {
-  margin-right: 1rem;
+
+main .prices {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  gap: 3rem;
+}
+main .prices .price {
+  padding: 3rem;
+  flex: 1;
+}
+main .prices .price h1 {
+  font-size: 3.5rem;
+}
+main .prices .price h1 span {
+  font-size: 1rem;
+  color: rgb(161, 161, 161);
+  font-weight: 500;
+}
+main .prices .price .price_description {
+  margin-bottom: 1.5rem;
+}
+main .prices .price button {
+  background-color: blue;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 7px;
+  color: white;
+}
+main .prices .price button:hover:not(.btn-blue) {
+  background-color: rgb(0, 0, 166);
+  background: white;
+  color: black;
+  border: 2px solid blue;
+}
+main .prices .price.blue {
+  background-color: rgb(36, 45, 254);
+  color: white;
+  border-radius: 10px;
+}
+main .prices .price.blue button {
+  background-color: rgb(231, 232, 254);
+  color: rgb(36, 45, 254);
+}
+main .prices .price.blue button:hover {
+  background-color: rgb(218, 220, 255);
 }/*# sourceMappingURL=style.css.map */
