@@ -1,0 +1,35 @@
+main {
+  .cta {
+    position: relative;
+    background: rgb(36, 45, 254);
+    color: #fff;
+    margin-top: 2rem;
+    padding-top: 3rem;
+  }
+  .cta__image {
+    flex: 1;
+    align-self: flex-end;
+    padding-right: 4rem;
+    img {
+      width: 100%;
+    }
+  }
+  .cta__body {
+    flex: 1;
+    padding-right: 5rem;
+    h1 {
+      font-size: 2rem;
+    }
+    .cta__body--content {
+      margin-bottom: 1.5rem;
+    }
+    div:not(div:last-child) {
+      margin-bottom: 1rem;
+    }
+    div {
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
