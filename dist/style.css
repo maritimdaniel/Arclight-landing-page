@@ -123,13 +123,18 @@ header .image {
 header nav {
   position: relative;
   flex: 2;
+  padding-left: 3rem;
 }
 header nav ul {
   margin: 0;
   padding: 0;
 }
 header nav li {
-  margin-right: 2rem;
+  margin-right: 4rem;
+}
+header nav li a:hover {
+  color: black;
+  font-weight: 500;
 }
 header nav .get-started {
   position: absolute;
@@ -230,7 +235,7 @@ main .cta__body .cta__body--content {
 
 main .prices {
   margin-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
   gap: 3rem;
 }
 main .prices .price {
@@ -273,4 +278,35 @@ main .prices .price.blue button {
 }
 main .prices .price.blue button:hover {
   background-color: rgb(218, 220, 255);
+}
+
+footer {
+  gap: 3rem;
+  border-top: 1px solid #eee;
+  padding-top: 3rem;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3rem;
+}
+footer h1 {
+  font-size: 1.8rem;
+}
+footer li:not(li:last-child) {
+  margin-bottom: 1rem;
+}
+footer li:hover {
+  color: black;
+  font-weight: 500;
+}
+footer .logo {
+  flex: 1;
+}
+footer .logo img {
+  margin-bottom: 1rem;
+}
+footer .links {
+  flex: 2;
+  justify-self: flex-end;
 }/*# sourceMappingURL=style.css.map */

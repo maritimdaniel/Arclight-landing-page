@@ -1,0 +1,30 @@
+footer {
+  gap: 3rem;
+  border-top: 1px solid #eee;
+  padding-top: 3rem;
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  li:not(li:last-child) {
+    margin-bottom: 1rem;
+  }
+  li:hover {
+    color: black;
+    font-weight: 500;
+  }
+  .logo {
+    flex: 1;
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+  .links {
+    flex: 2;
+    justify-self: flex-end;
+  }
+}
