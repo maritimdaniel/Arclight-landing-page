@@ -6,7 +6,7 @@
 
 Visit the live website hosted on netlify.
 
-- [Arclight website](https://pages.github.com/)
+- [Arclight website](https://codewellarclight.netlify.app/)
 
 ## Features
 
