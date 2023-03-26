@@ -1,3 +1,4 @@
+@use "../utils/" as u;
 header {
   padding: 3rem 0 0 0;
   .image {
@@ -8,12 +9,31 @@ header {
     position: relative;
     flex: 2;
     padding-left: 3rem;
+    @include u.breakpoint("1100") {
+      display: none;
+      position: absolute;
+      top: 14%;
+      right: 13%;
+      z-index: 999;
+      width: 230px !important;
+      background: ghostwhite;
+      padding-left: 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
     ul {
       margin: 0;
       padding: 0;
+      @include u.breakpoint("1100") {
+        flex-direction: column;
+      }
     }
     li {
       margin-right: 4rem;
+      @include u.breakpoint("1100") {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
       a:hover {
         color: black;
         font-weight: 500;
@@ -23,6 +43,27 @@ header {
     .get-started {
       position: absolute;
       right: 0;
+      @include u.breakpoint("1100") {
+        position: relative;
+      }
+    }
+  }
+}
+
+header {
+  .hamburger-menu {
+    display: none;
+    @include u.breakpoint("1100") {
+      display: block;
+    }
+  }
+}
+
+header {
+  .close-menu {
+    display: none;
+    @include u.breakpoint("1100") {
+      display: none;
     }
   }
 }

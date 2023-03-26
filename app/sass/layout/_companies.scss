@@ -1,0 +1,7 @@
+@use "../utils/" as u;
+main {
+  .companies {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+}

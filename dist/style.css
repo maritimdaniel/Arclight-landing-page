@@ -125,12 +125,37 @@ header nav {
   flex: 2;
   padding-left: 3rem;
 }
+@media (max-width: 68.75em) {
+  header nav {
+    display: none;
+    position: absolute;
+    top: 14%;
+    right: 13%;
+    z-index: 999;
+    width: 230px !important;
+    background: ghostwhite;
+    padding-left: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 header nav ul {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 68.75em) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
 header nav li {
   margin-right: 4rem;
+}
+@media (max-width: 68.75em) {
+  header nav li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 header nav li a:hover {
   color: black;
@@ -139,6 +164,29 @@ header nav li a:hover {
 header nav .get-started {
   position: absolute;
   right: 0;
+}
+@media (max-width: 68.75em) {
+  header nav .get-started {
+    position: relative;
+  }
+}
+
+header .hamburger-menu {
+  display: none;
+}
+@media (max-width: 68.75em) {
+  header .hamburger-menu {
+    display: block;
+  }
+}
+
+header .close-menu {
+  display: none;
+}
+@media (max-width: 68.75em) {
+  header .close-menu {
+    display: none;
+  }
 }
 
 .wrapper {
@@ -159,14 +207,53 @@ header nav .get-started {
   margin-bottom: 1.5rem;
 }
 
+main .hero {
+  padding-top: 3rem;
+}
+main .hero .hero__content {
+  flex: 1;
+}
+@media (max-width: 68.75em) {
+  main .hero .hero__content .buttons,
+  main .hero .hero__content .reviews {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+main .hero .hero__map {
+  flex: 1;
+  width: 100%;
+}
+main .hero .hero__map .image {
+  width: 100%;
+}
+main .hero .hero__map .image img {
+  width: 100%;
+}
+@media (max-width: 68.75em) {
+  main .hero {
+    flex-direction: column-reverse;
+  }
+}
+
 main .hero h1 {
   font-size: 3rem;
+}
+@media (max-width: 43.75em) {
+  main .hero h1 {
+    font-size: 2rem;
+  }
 }
 main .hero p {
   margin-bottom: 1rem;
 }
 main .hero .buttons {
   margin-bottom: 1.5rem;
+}
+@media (max-width: 68.75em) {
+  main .hero .buttons {
+    margin: 0;
+  }
 }
 main .hero .buttons .how-it-works {
   background: none;
@@ -175,6 +262,11 @@ main .hero .buttons .how-it-works {
   border-radius: 3px;
   margin-left: 1rem;
   padding: 0.8rem 1.5rem;
+}
+@media (max-width: 68.75em) {
+  main .hero .buttons .how-it-works {
+    margin: 1rem 0;
+  }
 }
 main .hero .buttons .how-it-works img {
   margin-right: 0.5rem;
@@ -187,10 +279,20 @@ main .hero .reviews p {
   margin-left: 1rem;
   margin-right: 0.5rem;
 }
+@media (max-width: 68.75em) {
+  main .hero .reviews p {
+    margin: 1rem 0;
+  }
+}
 main .hero .reviews a {
   text-decoration: underline;
   color: black;
   font-weight: 600;
+}
+
+main .companies {
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 main .cta {
@@ -198,10 +300,21 @@ main .cta {
   margin-top: 2rem;
   padding-top: 3rem;
 }
+@media (max-width: 68.75em) {
+  main .cta {
+    flex-direction: column;
+  }
+}
 main .cta__image {
   flex: 1;
   align-self: flex-end;
   padding-right: 4rem;
+}
+@media (max-width: 68.75em) {
+  main .cta__image {
+    align-self: center;
+    margin-bottom: 2rem;
+  }
 }
 main .cta__image img {
   width: 100%;
@@ -222,12 +335,18 @@ main .cta__body .cta__body--content {
 .plans {
   gap: 2rem;
 }
+@media (max-width: 68.75em) {
+  .plans {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .plans .plan {
   background: rgb(36, 45, 254);
   margin-top: 4rem;
   color: white;
   padding: 3rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .plans .plan h1 {
   font-size: 2rem;
@@ -238,9 +357,20 @@ main .prices {
   padding-bottom: 8rem;
   gap: 3rem;
 }
+@media (max-width: 68.75em) {
+  main .prices {
+    flex-direction: column;
+  }
+}
 main .prices .price {
   padding: 3rem;
   flex: 1;
+}
+@media (max-width: 68.75em) {
+  main .prices .price {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
 }
 main .prices .price h1 {
   font-size: 3.5rem;
@@ -285,6 +415,11 @@ footer {
   border-top: 1px solid #eee;
   padding-top: 3rem;
 }
+@media (max-width: 68.75em) {
+  footer {
+    flex-direction: column;
+  }
+}
 footer ul {
   margin: 0;
   padding: 0;
@@ -309,4 +444,9 @@ footer .logo img {
 footer .links {
   flex: 2;
   justify-self: flex-end;
+}
+@media (max-width: 50em) {
+  footer .links {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

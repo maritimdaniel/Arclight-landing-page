@@ -1,11 +1,19 @@
+@use "../utils/" as u;
 main {
   .prices {
     margin-top: 4rem;
     padding-bottom: 8rem;
     gap: 3rem;
+    @include u.breakpoint("1100") {
+      flex-direction: column;
+    }
     .price {
       padding: 3rem;
       flex: 1;
+      @include u.breakpoint("1100") {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
       h1 {
         font-size: 3.5rem;
         span {

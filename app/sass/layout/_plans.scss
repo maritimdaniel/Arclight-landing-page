@@ -1,11 +1,16 @@
+@use "../utils/" as u;
 .plans {
   gap: 2rem;
+  @include u.breakpoint("1100") {
+    flex-direction: column;
+    gap: 0;
+  }
   .plan {
     background: rgb(36, 45, 254);
     margin-top: 4rem;
     color: white;
     padding: 3rem;
-    border-radius: 5px;
+    border-radius: 10px;
     h1 {
       font-size: 2rem;
     }

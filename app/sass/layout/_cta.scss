@@ -1,13 +1,21 @@
+@use "../utils/" as u;
 main {
   .cta {
     position: relative;
     margin-top: 2rem;
     padding-top: 3rem;
+    @include u.breakpoint("1100") {
+      flex-direction: column;
+    }
   }
   .cta__image {
     flex: 1;
     align-self: flex-end;
     padding-right: 4rem;
+    @include u.breakpoint("1100") {
+      align-self: center;
+      margin-bottom: 2rem;
+    }
     img {
       width: 100%;
       border-bottom-left-radius: 2px;
